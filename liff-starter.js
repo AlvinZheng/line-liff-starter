@@ -15,7 +15,7 @@ function initializeApp(data) {
     // openWindow call
     document.getElementById('openwindowbutton').addEventListener('click', function () {
         liff.openWindow({
-            url: 'https://line.me'
+            url: 'https://www.sioeye.cn'
         });
     });
 
@@ -28,13 +28,13 @@ function initializeApp(data) {
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
         liff.sendMessages([{
             type: 'text',
-            text: "You've successfully sent a message! Hooray!"
+            text: "Please send me your portrait!"
         }, {
             type: 'sticker',
             packageId: '2',
             stickerId: '144'
         }]).then(function () {
-            window.alert("Message sent");
+            window.alert("Message sent successfully");
         }).catch(function (error) {
             window.alert("Error sending message: " + error);
         });
