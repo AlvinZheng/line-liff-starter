@@ -26,17 +26,28 @@ function initializeApp(data) {
 
     // sendMessages call
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
-        liff.sendMessages([{
-            type: 'text',
-            text: 'hello'
-        },{
-            type: 'text',
-            text: 'buy'
-        }]).then(function () {
-            window.alert("now we will send you videos");
-        }).catch(function (error) {
-            window.alert("Error sending message: " + error);
+//         liff.sendMessages([{
+//             type: 'text',
+//             text: 'hello'
+//         },{
+//             type: 'text',
+//             text: 'buy'
+//         }]).then(function () {
+//             window.alert("now we will send you videos");
+//         }).catch(function (error) {
+//             window.alert("Error sending message: " + error);
+//         });
+        liff.sendMessages([
+             {
+                type:'text',
+                text:'Hello, World!'
+              }
+        ]).then(() => {
+         console.log('message sent');
+        }).catch((err) => {
+         console.log('error', err);
         });
+         liff.closeWindow();
     });
 
     //get profile call
