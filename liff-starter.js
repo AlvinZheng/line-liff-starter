@@ -40,7 +40,7 @@ function initializeApp(data) {
         liff.sendMessages([
              {
                 type:'text',
-                text:'Hello, World!'
+                text:'buy'
               }
         ]).then(() => {
          console.log('message sent');
