@@ -26,7 +26,7 @@ function initializeApp(data) {
 
     // sendMessages call
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
-        liff.sendMessages({
+        liff.sendMessage({
             type: 'text',
             text: 'buy'
 //             originalContentUrl:'https://cdn.glitch.com/248fc3a4-0270-49c8-b4cc-ac60acce6d62%2FyouleLine.mp4?1548230516801',
