@@ -25,7 +25,7 @@ function initializeApp(data) {
     });
 
     // sendMessages call
-    document.getElementById('sendmessagebutton').addEventListener('click', function () {
+    document.getElementById('buybutton').addEventListener('click', function () {
 //         liff.sendMessages([{
 //             type: 'text',
 //             text: 'hello'
