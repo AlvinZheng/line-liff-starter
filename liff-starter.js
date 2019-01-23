@@ -44,10 +44,10 @@ function initializeApp(data) {
               }
         ]).then(() => {
          console.log('message sent');
+         window.alert("now we will send you videos");
         }).catch((err) => {
          console.log('error', err);
         });
-         liff.closeWindow();
     });
 
     //get profile call
