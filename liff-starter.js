@@ -29,16 +29,7 @@ function initializeApp(data) {
         liff.sendMessages([{
             type: 'text',
             text: 'buy'
-//             originalContentUrl:'https://cdn.glitch.com/248fc3a4-0270-49c8-b4cc-ac60acce6d62%2FyouleLine.mp4?1548230516801',
-//             previewImageUrl:'https://cdn.glitch.com/248fc3a4-0270-49c8-b4cc-ac60acce6d62%2FvideoImage.jpeg?1548229366457'
-        }
-//                           ,
-//         {
-//             type: 'sticker',
-//             packageId: '2',
-//             stickerId: '144'
-//         }
-        ]).then(function () {
+        }]).then(function () {
             window.alert("Message sent successfully");
         }).catch(function (error) {
             window.alert("Error sending message: " + error);
