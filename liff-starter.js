@@ -15,7 +15,7 @@ function initializeApp(data) {
     // openWindow call
     document.getElementById('openwindowbutton').addEventListener('click', function () {
         liff.openWindow({
-            url: 'https://www.sioeye.cn'
+            url: 'https://wxpay.wxutil.com/mch/pay/h5.v2.php'
         });
     });
 
